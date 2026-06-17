@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Password Strength Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Password Strength Checker</h1>
+
+        <h2>Verificador de Seguridad de Contraseñas</h2>
+
+        <p>
+            Create a secure password to protect your personal information.
+        </p>
+
+        <label for="password">
+            Password
+        </label>
+
+        <div class="passwordBox">
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password">
+
+            <button id="showButton">
+                Show
+            </button>
+
+        </div>
+
+        <div class="buttons">
+
+            <button id="checkButton">
+                Check Password
+            </button>
+
+            <button id="clearButton">
+                Clear
+            </button>
+
+        </div>
+
+        <h3>Password Strength</h3>
+
+        <div class="progress">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <p id="result">
+            Waiting for analysis...
+        </p>
+
+        <h3>Requirements</h3>
+
+        <ul>
+
+            <li id="length">
+                ❌ At least 8 characters
+            </li>
+
+            <li id="uppercase">
+                ❌ Uppercase letter
+            </li>
+
+            <li id="lowercase">
+                ❌ Lowercase letter
+            </li>
+
+            <li id="number">
+                ❌ Number
+            </li>
+
+            <li id="symbol">
+                ❌ Symbol
+            </li>
+
+        </ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
